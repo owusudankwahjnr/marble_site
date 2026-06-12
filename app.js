@@ -197,6 +197,71 @@ document.addEventListener('DOMContentLoaded', () => {
       coverPerCrate: 5,
       density:   60,
     },
+    'stone-work-1': {
+      name:      'Premium Golden-Russet Cladding',
+      category:  '✓ Our Work · Completed Project',
+      desc:      'A complete exterior wall cladding project on a two-storey Ghanaian villa using warm golden-russet split-face natural stones.',
+      img:       'assets/stone_work_1.jpg',
+      type:      'Golden-Russet Split Stone',
+      origin:    'Ghana',
+      thickness: '2 – 4 cm',
+      finish:    'Natural Split',
+      weight:    '30 – 35 kg/m²',
+      coverPerCrate: 12,
+      density:   30,
+    },
+    'stone-work-2': {
+      name:      'High-Wall Slate Cladding',
+      category:  '✓ Our Work · Project Under Construction',
+      desc:      'An ongoing natural slate stone cladding installation on a high wall showing precise masonry layout and natural multi-colour variation.',
+      img:       'assets/stone_work_2.jpg',
+      type:      'Multi-colour Slate Cladding',
+      origin:    'Volta Region, Ghana',
+      thickness: '2 – 5 cm',
+      finish:    'Split-Face',
+      weight:    '30 – 38 kg/m²',
+      coverPerCrate: 10,
+      density:   32,
+    },
+    'stone-work-3': {
+      name:      'Multi-Colour Stone Pillar Cladding',
+      category:  '✓ Our Work · Completed Project',
+      desc:      'A detail shot of a vertical wall column/pillar clad in horizontal strips of hand-split multi-colour natural stone.',
+      img:       'assets/stone_work_3.jpg',
+      type:      'Multi-colour Split Stone Strips',
+      origin:    'Eastern Region, Ghana',
+      thickness: '3 – 6 cm',
+      finish:    'Natural Split',
+      weight:    '32 – 40 kg/m²',
+      coverPerCrate: 8,
+      density:   35,
+    },
+    'stone-work-4': {
+      name:      'Gate Pillar Split Stone Installation',
+      category:  '✓ Our Work · Completed Project',
+      desc:      'A premium boundary wall gate pillar clad in multi-colour natural split stone strips, complementing a modern black and gold security gate.',
+      img:       'assets/stone_work_4.jpg',
+      type:      'Mixed Slate & Quartzite Strips',
+      origin:    'Ghana',
+      thickness: '2.5 – 5 cm',
+      finish:    'Natural Split',
+      weight:    '30 – 38 kg/m²',
+      coverPerCrate: 10,
+      density:   33,
+    },
+    'stone-work-5': {
+      name:      'Cladded Compound Retaining Wall',
+      category:  '✓ Our Work · Completed Project',
+      desc:      'A large exterior compound retaining wall fully clad in multi-colour split-face natural slate, featuring matching flagstone debris in the courtyard.',
+      img:       'assets/stone_work_5.jpg',
+      type:      'Multi-colour Split-Face Slate',
+      origin:    'Ghana',
+      thickness: '3 – 5 cm',
+      finish:    'Natural Split',
+      weight:    '32 – 42 kg/m²',
+      coverPerCrate: 10,
+      density:   34,
+    },
   };
 
   /* ── VISUALIZER STONE DESCRIPTIONS ───────── */
@@ -268,7 +333,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const filter = btn.dataset.filter;
       catalogItems.forEach(item => {
-        const match = filter === 'all' || item.dataset.category === filter;
+        const cats = item.dataset.category ? item.dataset.category.split(' ') : [];
+        const match = filter === 'all' || cats.includes(filter);
         item.style.display = match ? '' : 'none';
         item.style.animation = match ? 'fadeUp .4s var(--ease) forwards' : '';
       });
