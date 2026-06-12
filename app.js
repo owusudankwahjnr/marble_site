@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'multicolour-slate': {
       name:      'Multicolour Slate — Floor Installation',
       category:  '✓ Our Work · Actual Project',
-      desc:      'A completed outdoor courtyard in Accra using mixed grey, gold, russet, and terracotta slate tiles laid in a natural split-face pattern. Real installation by City Natural Mabel Stones.',
+      desc:      'A completed outdoor courtyard in Accra using mixed grey, gold, russet, and terracotta slate tiles laid in a natural split-face pattern. Real installation by City Natural Marble Stones.',
       img:       'assets/IMG_4296.jpg',
       type:      'Natural Slate (Mixed Colours)',
       origin:    'Ghana — Volta / Eastern Region',
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'driveway-facade': {
       name:      'Stone Driveway & Façade',
       category:  '✓ Our Work · Completed Project',
-      desc:      'Crazy pave slate driveway with matching natural stone entry facade. A real completed project by City Natural Mabel Stones in Accra — showing the full potential of natural stone for driveways and home entries.',
+      desc:      'Crazy pave slate driveway with matching natural stone entry facade. A real completed project by City Natural Marble Stones in Accra — showing the full potential of natural stone for driveways and home entries.',
       img:       'assets/stone_17.jpg',
       type:      'Natural Slate — Crazy Pave',
       origin:    'Ghana',
@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const interest = document.getElementById('contactInterest')?.value;
     const msg      = document.getElementById('contactMsg')?.value.trim();
 
-    const text = `Hello City Natural Mabel Stones! 🪨\n\nName: *${name}*\nPhone: ${phone}\nInterest: *${interest}*\n\nProject details:\n${msg}`;
+    const text = `Hello City Natural Marble Stones! 🪨\n\nName: *${name}*\nPhone: ${phone}\nInterest: *${interest}*\n\nProject details:\n${msg}`;
     window.open(`https://wa.me/233546006340?text=${encodeURIComponent(text)}`, '_blank');
   });
 
