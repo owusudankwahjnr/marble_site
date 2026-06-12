@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://owusudankwahjnr.github.io/marble_site/sitemap.xml

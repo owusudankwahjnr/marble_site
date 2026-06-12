@@ -852,6 +852,40 @@ p  { color: var(--stone-600); font-size: 1rem; font-weight: 400; }
   color: rgba(255,255,255,.35);
   font-size: .8rem;
 }
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-bottom-right .sep {
+  color: rgba(255,255,255,.15);
+}
+.kod-link {
+  color: var(--amber) !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity var(--t), color var(--t);
+  position: relative;
+}
+.kod-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--t);
+}
+.kod-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.kod-link:hover {
+  color: var(--white) !important;
+}
 .social-row { display: flex; gap: 10px; }
 .social-btn {
   width: 36px; height: 36px;
